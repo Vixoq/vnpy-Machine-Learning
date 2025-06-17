@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{590ED63D-6690-4D70-B101-D1AE3D4C2A20}|vnpy-Machine\\Form2\\Form2.csproj|d:\\githubnew\\17\\vnpy\\vnpy-plug\\1\\vnpy-machine\\form2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{590ED63D-6690-4D70-B101-D1AE3D4C2A20}|vnpy-Machine\\Form2\\Form2.csproj|solutionrelative:vnpy-machine\\form2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|d:\\githubnew\\17\\vnpy\\vnpy-plug\\1\\vnpy-machine\\chartgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|solutionrelative:vnpy-machine\\chartgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|d:\\githubnew\\17\\vnpy\\vnpy-plug\\1\\vnpy-machine\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|solutionrelative:vnpy-machine\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|d:\\githubnew\\17\\vnpy\\vnpy-plug\\1\\vnpy-machine\\assembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|solutionrelative:vnpy-machine\\assembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|d:\\githubnew\\17\\vnpy\\vnpy-plug\\1\\vnpy-machine\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233C7326-C397-4A22-AA82-DFBCBA32A279}|vnpy-Machine\\vnpy-learn.csproj|solutionrelative:vnpy-machine\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\Form2\\Form2.cs",
+              "RelativeDocumentMoniker": "vnpy-Machine\\Form2\\Form2.cs",
+              "ToolTip": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\Form2\\Form2.cs [Design]",
+              "RelativeToolTip": "vnpy-Machine\\Form2\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T12:09:13.218Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChartGenerator.cs",
+              "DocumentMoniker": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\ChartGenerator.cs",
+              "RelativeDocumentMoniker": "vnpy-Machine\\ChartGenerator.cs",
+              "ToolTip": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\ChartGenerator.cs",
+              "RelativeToolTip": "vnpy-Machine\\ChartGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T12:09:12.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "vnpy-Machine\\BaseViewModel.cs",
+              "ToolTip": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\BaseViewModel.cs",
+              "RelativeToolTip": "vnpy-Machine\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T12:09:11.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Assembly.cs",
+              "DocumentMoniker": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\Assembly.cs",
+              "RelativeDocumentMoniker": "vnpy-Machine\\Assembly.cs",
+              "ToolTip": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\Assembly.cs",
+              "RelativeToolTip": "vnpy-Machine\\Assembly.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T12:09:11.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "vnpy-Machine\\DatabaseConnection.cs",
+              "ToolTip": "D:\\GithubNew\\17\\vnpy\\vnpy-plug\\1\\vnpy-Machine\\DatabaseConnection.cs",
+              "RelativeToolTip": "vnpy-Machine\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T12:09:10.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
