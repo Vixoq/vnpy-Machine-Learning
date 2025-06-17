@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceManager.Views.WelcomePage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{AppThemeBinding Dark={StaticResource BackgroundDark}, Light={StaticResource BackgroundLight}}">
+    <ContentPage.Content>
+        <StackLayout Padding="0,16,0,16" >
+            <Image Source="{AppThemeBinding Dark=personal_finance.png, 
+                                            Light=personal_finance_light.png}" />
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="42">
+                <Label Text="Finance Manager" 
+                       FontSize="36" 
+                       FontAttributes="Bold" 
+                       TextColor="{AppThemeBinding Light={StaticResource AccentDarkGreen}, Dark={StaticResource AccentYellow}}"/>
+                <Button x:Name="getStarted" Text="Get Started"   
+                        Style="{StaticResource MainButtonUnChecked}"
+                        Clicked="getStarted_Clicked" />
+            </StackLayout>
+            <Label Text="powered by MLSA UPB" 
+                   FontAttributes="Italic" 
+                   FontSize="12" 
+                   HorizontalOptions="Center" 
+                   TextColor="{AppThemeBinding Light={StaticResource AccentDarkPurple}, Dark={StaticResource AccentYellow}}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
