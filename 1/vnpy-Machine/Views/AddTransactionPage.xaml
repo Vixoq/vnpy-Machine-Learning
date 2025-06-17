@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceManager.Views.AddTransactionPage"
+             Title="Add Transaction"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource BackgroundDark}}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TextColorLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource BackgroundLight}, Light={StaticResource BackgroundDark}}"/>
+            </Style>
+            <Style x:Key="TextColorEntry" TargetType="Entry">
+                <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource BackgroundLight}, Light={StaticResource BackgroundDark}}"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="24">
+                <StackLayout Padding="16,16,16,0" Spacing="8">
+                    <Frame Style="{StaticResource FrameAddNews}" >
+                        <StackLayout Spacing="0">
+                            <Label x:Name="DescriprionName" Text="Name" Style="{StaticResource TextColorLabel}"/>
+                            <Entry x:Name="TransactionName" Style="{StaticResource TextColorLabel}" Text="{Binding Name}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Style="{StaticResource FrameAddNews}" >
+                        <StackLayout Spacing="0">
+                            <Label x:Name="DescriprionPrice" Text="Price" Style="{StaticResource TextColorLabel}" />
+                            <Entry x:Name="TransactionPrice" Text="{Binding Price}" Style="{StaticResource TextColorLabel}" Keyboard="Numeric"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="* "/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Frame Grid.Row="0" Grid.Column="0" Style="{StaticResource FrameAddNews}" >
+                            <StackLayout Spacing="0">
+                                <Label x:Name="DescriptionCard" Text="Account" Style="{StaticResource TextColorLabel}"/>
+
+                                <Picker ItemsSource="{Binding Accounts}"
+                                        ItemDisplayBinding="{Binding Name}"
+                                        SelectedItem="{Binding SelectedAccount}"
+                                        Style="{StaticResource TextColorLabel}"/>
+
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="1" Style="{StaticResource FrameAddNews}" >
+                            <StackLayout Spacing="0">
+                                <Label x:Name="DescriptionCategory" Text="Category" Style="{StaticResource TextColorLabel}"/>
+                                <Picker ItemsSource="{Binding Categorys}"
+                                        ItemDisplayBinding="{Binding .}"
+                                        SelectedItem="{Binding SelectedCategory}"  Style="{StaticResource TextColorLabel}" />
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Frame Grid.Row="0" Grid.Column="0" Style="{StaticResource FrameAddNews}" >
+                            <StackLayout Spacing="0">
+                                <Label x:Name="DescriptionDate" Text="Date" Style="{StaticResource TextColorLabel}" />
+                                <DatePicker x:Name="TransactionDate" TextColor="Gray" Date="{Binding Date}"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="1" Style="{StaticResource FrameAddNews}" >
+                            <StackLayout Spacing="0">
+                                <Label x:Name="DescriptionType" Text="Type" Style="{StaticResource TextColorLabel}" />
+                                <Picker ItemsSource="{Binding Types}"
+                                        ItemDisplayBinding="{Binding .}"
+                                        SelectedItem="{Binding SelectedTypes}"
+                                          Style="{StaticResource TextColorLabel}"/>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                    <Frame Style="{StaticResource FrameAddNews}" >
+                        <StackLayout Spacing="0">
+                            <Label x:Name="DescriptionDesc" Text="Description" Style="{StaticResource TextColorLabel}"/>
+                            <Editor x:Name="TransactionDescription" Style="{StaticResource TextColorLabel}" HeightRequest="100" Text="{Binding Description}"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
+                    <Button x:Name="SaveBtn" Text="Save" Style="{StaticResource MainButtonUnChecked}" Clicked="SaveBtn_Clicked"/>
+                    <Button x:Name="CancelBtn" Text="Cancel" Style="{StaticResource MainButtonChecked}" Clicked="CancelBtn_Clicked" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
