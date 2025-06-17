@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceManager.Views.SettingsPage"
+             NavigationPage.HasNavigationBar="True" Title="Settings">
+    <ContentPage.Content>
+        <StackLayout Padding="0,16,0,0" Spacing="16">
+            <Label  Text="Theme" 
+                    Padding="20,0,0,0"
+                    TextColor="{AppThemeBinding Dark={StaticResource BackgroundLight}, Light={StaticResource AccentDarkPurple}}" 
+                    Style="{StaticResource TitleStyle}" 
+                    FontSize="Large"/>
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center" Spacing="26"  >
+                <Button x:Name="defaultTheme" Text="Default" FontSize="Small" HeightRequest="5"  Style="{StaticResource MainButtonChecked}" Clicked="defaultTheme_Clicked"/>
+                <Button x:Name="lightTheme" Text="Light" FontSize="Small"  Style="{StaticResource MainButtonChecked}" Clicked="defaultTheme_Clicked"/>
+                <Button x:Name="darkTheme" Text="Dark" FontSize="Small"  Style="{StaticResource MainButtonChecked}" Clicked="defaultTheme_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
