@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceManager.Views.AccountsPage"
+             Title="Cards"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource BackgroundDark}}">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <CollectionView x:Name="accountsList"
+                            SelectionMode="Single"
+                            ItemsSource="{Binding AccountsList}"
+                            SelectionChanged="accountsList_SelectionChanged">
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="1" HorizontalItemSpacing="7" VerticalItemSpacing="7"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Style="{StaticResource TransactionListStyle}" Padding="5,5,2,5">
+                            <Grid Padding="10,10,10,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Name}"
+                                       Grid.Row="0"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       TextColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource BackgroundDark}}"
+                                       Style="{StaticResource TitleStyle}"/>
+
+                                <Label Grid.Column="1"
+                                       HorizontalOptions="EndAndExpand"
+                                       Text="{Binding Path=Balance,StringFormat='{0:F2} Lei'}"
+                                       TextColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource BackgroundDark}}"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       Style="{StaticResource TitleStyle}"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                
+                <CollectionView.Header>
+                    <ContentView>
+                        <Label x:Name="totalMoney"
+                                Padding="16"
+                                HorizontalOptions="Center"
+                                TextColor="{AppThemeBinding Light={StaticResource BackgroundDark}, Dark={StaticResource BackgroundLight}}"
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Style="{StaticResource TitleStyle}"/>
+                    </ContentView>
+                </CollectionView.Header>
+
+                <CollectionView.EmptyView>
+                    <ContentView>
+                        <StackLayout HorizontalOptions="CenterAndExpand"
+                                 VerticalOptions="CenterAndExpand">
+                            <Label Text="Go to Bill Page and "
+                                   FontAttributes="Bold"
+                                   TextColor="{AppThemeBinding Light={StaticResource BackgroundDark}, Dark={StaticResource BackgroundLight}}"
+                                   FontSize="18"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="Press "
+                                   FontAttributes="Bold"
+                                   TextColor="{AppThemeBinding Light={StaticResource BackgroundDark}, Dark={StaticResource BackgroundLight}}"
+                                   FontSize="18"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+
+                                <Label Text="+"
+                                   WidthRequest="20" 
+                                   TextColor="{AppThemeBinding Light={StaticResource BackgroundDark}, Dark={StaticResource BackgroundLight}}"
+                                   FontAttributes="Bold"
+                                   FontSize="34"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="for adding new Transaction"
+                                   FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light={StaticResource BackgroundDark}, Dark={StaticResource BackgroundLight}}"
+                                   FontSize="18"
+                                    VerticalOptions="Center"
+                                   HorizontalOptions="Center" />
+
+                        </StackLayout>
+                    </ContentView>
+                </CollectionView.EmptyView>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
