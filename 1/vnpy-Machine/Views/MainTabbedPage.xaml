@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="FinanceManager.Views.MainTabbedPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom" 
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            NavigationPage.HasNavigationBar="False"
+            xmlns:view="clr-namespace:FinanceManager.Views"
+            BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource BackgroundDark}}">
+
+    <NavigationPage Title="Bill"  IconImageSource="shopping_bag.png" >
+        <x:Arguments>
+            <view:ExpencesPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Stats" IconImageSource="bar_chart_2.png" >
+        <x:Arguments>
+            <view:StatsPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Cards" IconImageSource="dollar_sign.png" >
+        <x:Arguments>
+            <view:AccountsPage/>
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>
